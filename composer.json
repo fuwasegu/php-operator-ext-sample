@@ -1,0 +1,30 @@
+{
+    "name": "fuwasegu/php-operator-ext-sample",
+    "description": "operator 拡張をためす",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Fuwasegu",
+            "email": "admin@fuwasegu.com"
+        }
+    ],
+    "require": {
+        "php": "^8.4",
+        "ext-operator": "^0.5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*",
+        "mockery/mockery": "*"
+    }
+}
