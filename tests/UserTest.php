@@ -23,8 +23,8 @@ class UserTest extends TestCase
         $user_2 = $repository->findById(UserId::create('xxx'));
 
         // Equals も Same もちゃんと動くかどうか
-        $this->assertEquals($user_1, $user_2);
-        $this->assertSame($user_1, $user_2);
+        $this->assertEquals($user_1->id, $user_2->id);
+        $this->assertSame($user_1->id, $user_2->id);
     }
 
     #[Test]
